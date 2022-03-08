@@ -8,7 +8,7 @@ const Weather = () => {
     const [temperature,setTemperature]=useState(0)
     const [isFahrenheit,setIsFahrenheit]=useState(true)
 
-    const success =(position) => {
+    const success =position => {
         
 
         console.log(position.coords)
@@ -27,6 +27,8 @@ const Weather = () => {
         })
     }
 
+   
+
     const convertTemperature= () =>{
         if(isFahrenheit){
             setTemperature((temperature-32)/1.8000)
@@ -39,10 +41,9 @@ const Weather = () => {
 
     useEffect(() =>{
         navigator.geolocation.getCurrentPosition(success)
-    },[])
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
 
-
-
+    
     return (
         <div className="weather">
             <h1>Weather Day</h1>

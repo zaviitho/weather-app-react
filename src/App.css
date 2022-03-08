@@ -1,10 +1,6 @@
 .App {
   text-align: center;
-  background-image: url(https://www.lifeder.com/wp-content/uploads/2021/10/clima-tipos-768x317.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size:100% 100%;
-  background-color: wheat;
+  background-color: rgb(57, 27, 187);
   width: 100%;
 }
 
@@ -17,8 +13,9 @@
   border-radius: 2rem;
   border:1px solid black;
   box-shadow: inset 5em 1em skyblue;
-  position: relative;
+  position: absolute;
   top: 5rem;
+  left: 35rem;
   
 }
 .App .weather  li{
